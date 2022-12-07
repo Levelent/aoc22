@@ -43,7 +43,7 @@ func main() {
 
 	// Sort descending [Why so verbose?]
 	sort.Sort(sort.Reverse(sort.IntSlice(totals)))
-	// Another way: sort.Slice(totals, func(i, j int) bool { return i > j })
+	// Another way: sort.Slice(totals, func(i, j int) bool { return totals[i] > totals[j] })
 	// To sort ascending, just do sort.Ints(totals)
 
 	// Output top (part a) and top 3 (part b) totals

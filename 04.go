@@ -2,19 +2,14 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"os"
 	"strconv"
 	"strings"
-	// External dependency for ordered generic type
 )
 
 func main() {
 	// Read input data
-	content, err := os.ReadFile("input/04.txt")
-	if err != nil {
-		log.Fatal(err)
-	}
+	content, _ := os.ReadFile("input/04.txt")
 
 	// Convert newlines from Windows to UNIX
 	text := strings.ReplaceAll(string(content), "\r\n", "\n")
